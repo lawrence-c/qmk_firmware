@@ -65,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |   `  |   |  |   -  |   =  |   _  |   +  |-------.    ,-------|   ^  |   {  |   }  |   (  |   )  |   ~  |
  * |------+------+------+------+------+------|   [   |    |    ]  |------+------+------+------+------+------|
- * |      |      |      |      |      |      |-------|    |-------|      |      |      |      |   \  |      |
+ * | PGUP | PGDN | HOME |  DEL |  END |      |-------|    |-------|      |      |      |      |   \  |      |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *                   | LAlt | LGUI |LOWER | /Space  /       \Enter \  |BackSP|RAISE | RGUI |
  *                   |      |      |      |/       /         \      \ |      |      |      |
@@ -74,9 +74,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_LOWER] = LAYOUT(
   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,                     KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
-  _______, UK_EXLM, UK_AT,   UK_HASH, UK_DLR,  UK_PERC,                   _______, UK_QUES, UK_ASTR, UK_LBRC, UK_RBRC, _______,
+  XXXXXXX, UK_EXLM, UK_AT,   UK_HASH, UK_DLR,  UK_PERC,                   XXXXXXX, UK_QUES, UK_ASTR, UK_LBRC, UK_RBRC, XXXXXXX,
   UK_GRV,  UK_PIPE, UK_MINS, UK_EQL,  UK_UNDS, UK_PLUS,                   UK_CIRC, UK_LCBR, UK_RCBR, UK_LPRN, UK_RPRN, UK_TILD,
-  _______, _______, _______, _______, _______, _______, _______, _______, XXXXXXX, _______, _______, _______, UK_BSLS, _______,
+  KC_PGUP, KC_PGDN, KC_HOME, KC_DEL,  KC_END, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, UK_BSLS, XXXXXXX,
                              _______, _______, _______, _______, _______,  _______, _______, _______
 ),
 
@@ -96,10 +96,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 
 [_RAISE] = LAYOUT(
-  _______, _______, _______, _______, _______, _______,                     _______, _______, _______, _______, _______, _______,
-  _______, _______, _______, _______, _______, _______,                     _______, _______, _______, _______, _______, _______,
-  _______, _______, _______, _______, _______, _______,                     XXXXXXX, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, XXXXXXX,
-  _______, _______, _______, _______, _______, _______,  _______, _______,  _______, _______, _______, _______, _______, _______,
+  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                     XXXXXXX, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, XXXXXXX,
+  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
                              _______, _______, _______,  _______, _______,  _______, _______, _______
 ),
 
